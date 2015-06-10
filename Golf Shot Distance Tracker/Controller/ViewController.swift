@@ -20,34 +20,34 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     var clubEditList: List<Club>?
     
     
+    // these are from segue from addclub view
     
+    // do nothing if the user pressed cancel
     @IBAction func cancelToClubView(segue: UIStoryboardSegue) {
         
     }
+    
+    // if the user added a club, add it to the database
     @IBAction func addClub(segue: UIStoryboardSegue) {
         
-        
+        // retrieve the add club view controller
         if let vc = segue.sourceViewController as? AddClubViewController {
             
+            // get the club name enetered
             let clubName = vc.textField.text
                 
             
             // add name to database to database and reload tableView
             self.database.addClub(clubName)
             self.tableView.reloadData()
-                
-
-            
         }
-
-        
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
+
+        // displat an edit button
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
         
     }
@@ -55,8 +55,10 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(true)
         
+        // set the delegate
         tableView.delegate = self
         
+        // reload data
         tableView.reloadData()
     }
     
@@ -104,6 +106,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
 
     }
     
+    // allow user to edit table
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
@@ -112,7 +115,8 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         
         // deals with deleting rows from the table view
         switch editingStyle {
-            
+        
+        // user wants to delete club
         case .Delete:
             
             // delete from database
@@ -129,6 +133,7 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
     }
     
     override func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
+        // do not let user swipe left to delete clubs, only if they click the edit, can they possibly delete a club
         if tableView.editing {
             return UITableViewCellEditingStyle.Delete
         } else {
@@ -136,23 +141,23 @@ class ViewController: UITableViewController, UITableViewDataSource, UITableViewD
         }
     }
     
+    // user can rearange table
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
     
+    // if the user rearaged a club, reflect the change in the database
     override func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
         
+        // get the club that was moved
         let clubMoved = database.retrieveAllClubs()[sourceIndexPath.row]
         
-        
-        
+        // rearange the database
         database.updateClubList(clubMoved, startIndex: sourceIndexPath.row, endIndex: destinationIndexPath.row)
-        
-        
         
     }
     
-    
+    // if the user sets editing, set the editing  Duh!
     override func setEditing(editing: Bool, animated: Bool) {
        super.setEditing(editing, animated: animated)
         

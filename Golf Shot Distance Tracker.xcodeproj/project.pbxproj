@@ -16,7 +16,6 @@
 		3D4612491B214B5F00F5AD4A /* About.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4612481B214B5F00F5AD4A /* About.rtf */; };
 		3D46124B1B215CC500F5AD4A /* Help.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3D46124A1B215CC500F5AD4A /* Help.rtf */; };
 		3D46124D1B2206C800F5AD4A /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D46124C1B2206C800F5AD4A /* WelcomeView.xib */; };
-		3D46124F1B222F3000F5AD4A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46124E1B222F3000F5AD4A /* WelcomeViewController.swift */; };
 		3DA344ED1B0CEA8900A2390A /* ClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA344EC1B0CEA8900A2390A /* ClubDetailViewController.swift */; };
 		3DA583D91B28CFCC00D6A415 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA583D81B28CFCC00D6A415 /* HelpViewController.swift */; };
 		3DD2C7201B03CA74008896F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C71F1B03CA74008896F6 /* AppDelegate.swift */; };
@@ -67,7 +66,6 @@
 		3D4612481B214B5F00F5AD4A /* About.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = About.rtf; sourceTree = "<group>"; };
 		3D46124A1B215CC500F5AD4A /* Help.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Help.rtf; sourceTree = "<group>"; };
 		3D46124C1B2206C800F5AD4A /* WelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
-		3D46124E1B222F3000F5AD4A /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3DA344EC1B0CEA8900A2390A /* ClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailViewController.swift; sourceTree = "<group>"; };
 		3DA583D81B28CFCC00D6A415 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpViewController.swift; path = ../View/HelpViewController.swift; sourceTree = "<group>"; };
 		3DD2C71A1B03CA74008896F6 /* Golf Shot Distance Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golf Shot Distance Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +127,6 @@
 		3D4612531B278B6400F5AD4A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3D46124E1B222F3000F5AD4A /* WelcomeViewController.swift */,
 				3DD2C74C1B040424008896F6 /* TrackingViewController.swift */,
 				3D4612421B1BCC8A00F5AD4A /* AddClubViewController.swift */,
 				3DA344EC1B0CEA8900A2390A /* ClubDetailViewController.swift */,
@@ -340,7 +337,6 @@
 				3D03CAE21B1378D10023FBEA /* Extensions.swift in Sources */,
 				3D4612471B213FCD00F5AD4A /* AboutViewController.swift in Sources */,
 				3DD2C74F1B0427D3008896F6 /* RealShot.swift in Sources */,
-				3D46124F1B222F3000F5AD4A /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

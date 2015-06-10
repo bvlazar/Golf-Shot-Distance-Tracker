@@ -14,26 +14,17 @@ class AddClubViewController: UITableViewController {
     
     let database = Database()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
+        // open up keyboard as soon as the view loads
         textField.becomeFirstResponder()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
-    
     override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        // if user clicks on the row, open up the keyboard
         if indexPath.row == 0 {
             textField.becomeFirstResponder()
         }
@@ -45,17 +36,17 @@ class AddClubViewController: UITableViewController {
         
         let button = sender as! UIBarButtonItem
         
-        
+        // if they pressed cancel, segue from this view and cancel opperation
         if button.tag == 0 {
             return true
         }
-        
+        // dont let user go away if they didnt enter any text for a club name
         if clubName == "" {
             return false
         } else {
-            
+            // if they click done, check to see if club is in the database
             if database.clubNameExists(clubName) {
-                
+                // if it is, show an alert to tell them to try again
                 var clubExistsAlert = UIAlertController(title: "Club name already exists", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
                 
                 clubExistsAlert.addAction(UIAlertAction(title: "Try Again", style: .Default, handler: { (action: UIAlertAction!) in
@@ -63,9 +54,10 @@ class AddClubViewController: UITableViewController {
                 }))
                 self.presentViewController(clubExistsAlert, animated: true, completion: nil)
                 
+                // do not segue in this case
                 return false
             } else {
-                
+                // if all other of those tests pass, segue from this screen
                 return true
             }
             

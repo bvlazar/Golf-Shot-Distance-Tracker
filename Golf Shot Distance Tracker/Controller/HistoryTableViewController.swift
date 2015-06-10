@@ -17,14 +17,11 @@ class HistoryTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // set title of the view
         self.title = "Shot History"
 
 
     }
-
-
-
-    // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
        
@@ -35,15 +32,16 @@ class HistoryTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         // Return the number of rows in the section.
-        
-        
         return database.retrieveAllShots().count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        // contruct cell to give to the tableview
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
-
+        
+        // get shot to be displayed BUT show in reverse cronological order
         let currentShot = database.retrieveAllShots()[database.retrieveAllShots().count-indexPath.row-1]
         
         
@@ -61,7 +59,7 @@ class HistoryTableViewController: UITableViewController {
             
         case .Delete:
             
-            // delete from database
+            // delete from database, also makes sure to do reverse cronoligcal
             database.deleteShot(database.retrieveAllShots().count-indexPath.row-1)
             
             // delete

@@ -12,22 +12,19 @@ class AboutViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
     
-    
+    // the only purpose of this viewcontroller is to load RTF file into the textview
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // load About.rtf
         let path = NSBundle.mainBundle().URLForResource("About", withExtension: "rtf")
         
+        // turn it into an Attributed string
         let text = NSAttributedString(fileURL: path, options: [NSDocumentTypeDocumentAttribute:NSRTFTextDocumentType], documentAttributes: nil, error: nil)
         
+        
+        // put the text in the textview
         textView.attributedText = text!
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
 
 }

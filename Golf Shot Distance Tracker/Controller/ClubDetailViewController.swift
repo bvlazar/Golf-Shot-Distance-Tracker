@@ -41,6 +41,7 @@ class ClubDetailViewController: UITableViewController, UITableViewDataSource {
         // create statistics object to retrive club statistics
         stats = Statistics(name: clubName)
         
+        // set all the labels to the approriate statistics
         meanLabel.text! = displayDistance(stats.getClubDistanceAverage())
         minLabel.text! = displayDistance(stats.getRangeClubDistance("min"))
         percentile25Label.text! = displayDistance(stats.getPercentileClubDistance(0.25))
@@ -53,18 +54,18 @@ class ClubDetailViewController: UITableViewController, UITableViewDataSource {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
-        
-
-        
     }
     
+    // if the user wants to delete all distances from a specific club
     @IBAction func resetClub(sender: UIBarButtonItem) {
         
+        // create an action sheet to ask the user to confirm its decsion
         let optionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
         
         let resetButton = UIAlertAction(title: "Reset Club", style: .Destructive, handler: {
             (alert: UIAlertAction!) -> Void in
             
+            // if they confirm, delete all shots and reload the view
             self.database.deleteShots(self.clubName)
             self.viewDidLoad()
             

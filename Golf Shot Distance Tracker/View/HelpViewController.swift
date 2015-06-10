@@ -12,32 +12,20 @@ class HelpViewController: UIViewController {
 
     @IBOutlet weak var textView: UITextView!
     
+    
+    // only purpose of this view controller is to load help file in RTF
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        // load Help.rtf
         let path = NSBundle.mainBundle().URLForResource("Help", withExtension: "rtf")
         
+        // create attributed string
         let text = NSAttributedString(fileURL: path, options: [NSDocumentTypeDocumentAttribute:NSRTFTextDocumentType], documentAttributes: nil, error: nil)
         
+        // set the textView to the text
         textView.attributedText = text!
 
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

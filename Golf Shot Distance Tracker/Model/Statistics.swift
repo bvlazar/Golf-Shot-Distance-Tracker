@@ -13,10 +13,6 @@ import RealmSwift
 
 
 class Statistics {
-
-    
-    
-    
     
     let clubName: String?
     let club:Club!
@@ -26,15 +22,14 @@ class Statistics {
     // Must intialize with a string of the club name
     init(name: String) {
         
-       clubName = name
-        
+        // intialize the club name and the club object to get stats for
+        clubName = name
         club = database.getClub(clubName!)
         
     }
     
     
     // returns the average distance of the club
-
     func getClubDistanceAverage() -> Double {
         
         var total: Double = 0

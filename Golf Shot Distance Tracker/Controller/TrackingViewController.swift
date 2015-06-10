@@ -163,9 +163,8 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
         allLocations.append(currentLocation)
         
         
-        // if stop button is enabled, this means we are in the middle of tracking
+
         // if we are in the middle of tracking, we need to update distance label
-        
         if isTracking {
             // only update display if the accurcay is good
             if currentLocation.horizontalAccuracy <= 11 {
@@ -205,7 +204,7 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
                 
                 noLocationAlert.addAction(UIAlertAction(title: "Enable", style: .Default, handler: { (action: UIAlertAction!) in
                     
-                    
+                    // open the settings app to allow the user to change his choice mannually
                     if let url = NSURL(string: UIApplicationOpenSettingsURLString) {
                         UIApplication.sharedApplication().openURL(url)
                     }
@@ -215,8 +214,10 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
                 self.presentViewController(noLocationAlert, animated: true, completion: nil)
             } else  {
             
+                // check to see if the GPS has an accurate fix
                 if allLocations.last!.horizontalAccuracy > 11 {
                     
+                    // if its not accurate, create an alert to warn the user and ask him if he still wants to start tracking or if he wants to wait
                     var notAccurateAlert = UIAlertController(title: "Location is Not Accurate", message: "The current determined location is not accurate, do you still want to start tracking or wait for better accuracy.", preferredStyle: UIAlertControllerStyle.Alert)
                     
                     notAccurateAlert.addAction(UIAlertAction(title: "Start", style: .Default, handler: { (action: UIAlertAction!) in
@@ -231,6 +232,7 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
                     self.presentViewController(notAccurateAlert, animated: true, completion: nil)
                     
                 } else {
+                    // if GPS has a good fix, go ahead and start tracking
                     startTracking()
                 }
             }
@@ -253,9 +255,12 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
     // This needs to be called so when the textbox opens, the first club is automatcally put in the textbox
     func initalizeTextField(sender: UITextField) {
         
+        // if there is already a club that has been prviously selected, put that in the textbox when it opens again
         if textField.text != ""{
             sender.text = textField.text
         } else {
+            
+            // if not, put the firt club in the database there
             let allClubs = database.retrieveAllClubs()
             sender.text = allClubs.first!.name
         }
@@ -287,20 +292,17 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
     // called when tracking is stoped
     func stopTracking() {
         
-        // add shot to database
-        
-        
-        // user can now change the club in textbox
-        
+        // Allow text field and picker to be shown
         textField.enabled = true
-        // change appearnce of the button accordinly
+        
+        // change appearnce of the button accordingly
         startStopButton.setTitle("Select Club", forState: UIControlState.Normal)
         startStopButton.backgroundColor = UIColor(red: 34/255, green: 87/255, blue: 140/255, alpha: 1)
         
-        // obvisous stuff goes here
-        
+       
         isTracking = false
         
+        // add shot to database
         database.addShot(picker.selectedRowInComponent(0), distance: currentShot.getDistance())
         
     }
@@ -309,11 +311,11 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
     
     func doneAction() {
         
+        // close the picker when the user clicks done on its toolbar
         textField.resignFirstResponder()
         
         // when user clicks the done button in the toolbar
         // change it to green and have it say start tracking
-        
         startStopButton.backgroundColor! = UIColor(red: 34/255, green: 139/255, blue: 34/255, alpha: 1)
         
         startStopButton.setTitle("Start Tracking", forState: UIControlState.Normal)
