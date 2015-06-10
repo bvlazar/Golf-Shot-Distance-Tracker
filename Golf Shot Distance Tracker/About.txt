@@ -1,0 +1,9 @@
+Golf Shot Distance Tracker
+
+App Created by Benjamin Lazar
+
+Tab Bar Icons
+
+'Settings' icon by Joe Mortell, from thenounproject.com.
+'Golf' icon by Creative Stall, from thenounproject.com.
+'Golf-Clubs' icon by Erik Wagner, from thenounproject.com.

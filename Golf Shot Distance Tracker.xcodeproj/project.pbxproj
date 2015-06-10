@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D03CAD01B0F89370023FBEA /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03CACF1B0F89370023FBEA /* HistoryTableViewController.swift */; };
+		3D03CAE01B12B85E0023FBEA /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03CADF1B12B85E0023FBEA /* SettingsViewController.swift */; };
+		3D03CAE21B1378D10023FBEA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03CAE11B1378D10023FBEA /* Extensions.swift */; };
+		3D4612431B1BCC8A00F5AD4A /* AddClubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4612421B1BCC8A00F5AD4A /* AddClubViewController.swift */; };
+		3D4612451B213F7800F5AD4A /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3D4612441B213F7800F5AD4A /* About.txt */; };
+		3D4612471B213FCD00F5AD4A /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4612461B213FCD00F5AD4A /* AboutViewController.swift */; };
+		3D4612491B214B5F00F5AD4A /* About.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3D4612481B214B5F00F5AD4A /* About.rtf */; };
+		3D46124B1B215CC500F5AD4A /* Help.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 3D46124A1B215CC500F5AD4A /* Help.rtf */; };
+		3D46124D1B2206C800F5AD4A /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D46124C1B2206C800F5AD4A /* WelcomeView.xib */; };
+		3D46124F1B222F3000F5AD4A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D46124E1B222F3000F5AD4A /* WelcomeViewController.swift */; };
+		3DA344ED1B0CEA8900A2390A /* ClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA344EC1B0CEA8900A2390A /* ClubDetailViewController.swift */; };
+		3DA583D91B28CFCC00D6A415 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA583D81B28CFCC00D6A415 /* HelpViewController.swift */; };
+		3DD2C7201B03CA74008896F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C71F1B03CA74008896F6 /* AppDelegate.swift */; };
+		3DD2C7221B03CA74008896F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C7211B03CA74008896F6 /* ViewController.swift */; };
+		3DD2C7251B03CA74008896F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD2C7231B03CA74008896F6 /* Main.storyboard */; };
+		3DD2C7271B03CA74008896F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD2C7261B03CA74008896F6 /* Images.xcassets */; };
+		3DD2C72A1B03CA74008896F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD2C7281B03CA74008896F6 /* LaunchScreen.xib */; };
+		3DD2C7361B03CA74008896F6 /* Golf_Shot_Distance_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C7351B03CA74008896F6 /* Golf_Shot_Distance_TrackerTests.swift */; };
+		3DD2C7401B03CABE008896F6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD2C73F1B03CABE008896F6 /* RealmSwift.framework */; };
+		3DD2C7411B03CABE008896F6 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD2C73F1B03CABE008896F6 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DD2C7491B03D5CB008896F6 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C7481B03D5CB008896F6 /* Database.swift */; };
+		3DD2C74D1B040424008896F6 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C74C1B040424008896F6 /* TrackingViewController.swift */; };
+		3DD2C74F1B0427D3008896F6 /* RealShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C74E1B0427D3008896F6 /* RealShot.swift */; };
+		3DD2C75F1B045B22008896F6 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C75E1B045B22008896F6 /* Statistics.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DD2C7301B03CA74008896F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DD2C7121B03CA74008896F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DD2C7191B03CA74008896F6;
+			remoteInfo = "Golf Shot Distance Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DD2C7421B03CABE008896F6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3DD2C7411B03CABE008896F6 /* RealmSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D03CACF1B0F89370023FBEA /* HistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		3D03CADF1B12B85E0023FBEA /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3D03CAE11B1378D10023FBEA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3D4612421B1BCC8A00F5AD4A /* AddClubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddClubViewController.swift; sourceTree = "<group>"; };
+		3D4612441B213F7800F5AD4A /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		3D4612461B213FCD00F5AD4A /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		3D4612481B214B5F00F5AD4A /* About.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = About.rtf; sourceTree = "<group>"; };
+		3D46124A1B215CC500F5AD4A /* Help.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Help.rtf; sourceTree = "<group>"; };
+		3D46124C1B2206C800F5AD4A /* WelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
+		3D46124E1B222F3000F5AD4A /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		3DA344EC1B0CEA8900A2390A /* ClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailViewController.swift; sourceTree = "<group>"; };
+		3DA583D81B28CFCC00D6A415 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpViewController.swift; path = ../View/HelpViewController.swift; sourceTree = "<group>"; };
+		3DD2C71A1B03CA74008896F6 /* Golf Shot Distance Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golf Shot Distance Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD2C71E1B03CA74008896F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD2C71F1B03CA74008896F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DD2C7211B03CA74008896F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DD2C7241B03CA74008896F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DD2C7261B03CA74008896F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3DD2C7291B03CA74008896F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3DD2C72F1B03CA74008896F6 /* Golf Shot Distance TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Golf Shot Distance TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DD2C7341B03CA74008896F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DD2C7351B03CA74008896F6 /* Golf_Shot_Distance_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Golf_Shot_Distance_TrackerTests.swift; sourceTree = "<group>"; };
+		3DD2C73F1B03CABE008896F6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		3DD2C7481B03D5CB008896F6 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		3DD2C74C1B040424008896F6 /* TrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		3DD2C74E1B0427D3008896F6 /* RealShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealShot.swift; sourceTree = "<group>"; };
+		3DD2C75E1B045B22008896F6 /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DD2C7171B03CA74008896F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD2C7401B03CABE008896F6 /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD2C72C1B03CA74008896F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D4612511B278A4600F5AD4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DD2C75E1B045B22008896F6 /* Statistics.swift */,
+				3DD2C74E1B0427D3008896F6 /* RealShot.swift */,
+				3DD2C7481B03D5CB008896F6 /* Database.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D4612521B278B3800F5AD4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DD2C7231B03CA74008896F6 /* Main.storyboard */,
+				3DD2C7281B03CA74008896F6 /* LaunchScreen.xib */,
+				3D46124C1B2206C800F5AD4A /* WelcomeView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D4612531B278B6400F5AD4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D46124E1B222F3000F5AD4A /* WelcomeViewController.swift */,
+				3DD2C74C1B040424008896F6 /* TrackingViewController.swift */,
+				3D4612421B1BCC8A00F5AD4A /* AddClubViewController.swift */,
+				3DA344EC1B0CEA8900A2390A /* ClubDetailViewController.swift */,
+				3D03CADF1B12B85E0023FBEA /* SettingsViewController.swift */,
+				3D4612461B213FCD00F5AD4A /* AboutViewController.swift */,
+				3DA583D81B28CFCC00D6A415 /* HelpViewController.swift */,
+				3D03CACF1B0F89370023FBEA /* HistoryTableViewController.swift */,
+				3DD2C7211B03CA74008896F6 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3DD2C7111B03CA74008896F6 = {
+			isa = PBXGroup;
+			children = (
+				3DD2C73F1B03CABE008896F6 /* RealmSwift.framework */,
+				3DD2C71C1B03CA74008896F6 /* Golf Shot Distance Tracker */,
+				3DD2C7321B03CA74008896F6 /* Golf Shot Distance TrackerTests */,
+				3DD2C71B1B03CA74008896F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DD2C71B1B03CA74008896F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DD2C71A1B03CA74008896F6 /* Golf Shot Distance Tracker.app */,
+				3DD2C72F1B03CA74008896F6 /* Golf Shot Distance TrackerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DD2C71C1B03CA74008896F6 /* Golf Shot Distance Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				3D4612531B278B6400F5AD4A /* Controller */,
+				3D4612521B278B3800F5AD4A /* View */,
+				3D4612511B278A4600F5AD4A /* Model */,
+				3DD2C71F1B03CA74008896F6 /* AppDelegate.swift */,
+				3D03CAE11B1378D10023FBEA /* Extensions.swift */,
+				3DD2C7261B03CA74008896F6 /* Images.xcassets */,
+				3DD2C71D1B03CA74008896F6 /* Supporting Files */,
+			);
+			path = "Golf Shot Distance Tracker";
+			sourceTree = "<group>";
+		};
+		3DD2C71D1B03CA74008896F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D4612481B214B5F00F5AD4A /* About.rtf */,
+				3D46124A1B215CC500F5AD4A /* Help.rtf */,
+				3D4612441B213F7800F5AD4A /* About.txt */,
+				3DD2C71E1B03CA74008896F6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DD2C7321B03CA74008896F6 /* Golf Shot Distance TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DD2C7351B03CA74008896F6 /* Golf_Shot_Distance_TrackerTests.swift */,
+				3DD2C7331B03CA74008896F6 /* Supporting Files */,
+			);
+			path = "Golf Shot Distance TrackerTests";
+			sourceTree = "<group>";
+		};
+		3DD2C7331B03CA74008896F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DD2C7341B03CA74008896F6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DD2C7191B03CA74008896F6 /* Golf Shot Distance Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD2C7391B03CA74008896F6 /* Build configuration list for PBXNativeTarget "Golf Shot Distance Tracker" */;
+			buildPhases = (
+				3DD2C7161B03CA74008896F6 /* Sources */,
+				3DD2C7171B03CA74008896F6 /* Frameworks */,
+				3DD2C7181B03CA74008896F6 /* Resources */,
+				3DD2C7421B03CABE008896F6 /* Embed Frameworks */,
+				3DD2C7431B03CAE2008896F6 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Golf Shot Distance Tracker";
+			productName = "Golf Shot Distance Tracker";
+			productReference = 3DD2C71A1B03CA74008896F6 /* Golf Shot Distance Tracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DD2C72E1B03CA74008896F6 /* Golf Shot Distance TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DD2C73C1B03CA74008896F6 /* Build configuration list for PBXNativeTarget "Golf Shot Distance TrackerTests" */;
+			buildPhases = (
+				3DD2C72B1B03CA74008896F6 /* Sources */,
+				3DD2C72C1B03CA74008896F6 /* Frameworks */,
+				3DD2C72D1B03CA74008896F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DD2C7311B03CA74008896F6 /* PBXTargetDependency */,
+			);
+			name = "Golf Shot Distance TrackerTests";
+			productName = "Golf Shot Distance TrackerTests";
+			productReference = 3DD2C72F1B03CA74008896F6 /* Golf Shot Distance TrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DD2C7121B03CA74008896F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Benjamin Lazar";
+				TargetAttributes = {
+					3DD2C7191B03CA74008896F6 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 4GYMC9DL3A;
+					};
+					3DD2C72E1B03CA74008896F6 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 3DD2C7191B03CA74008896F6;
+					};
+				};
+			};
+			buildConfigurationList = 3DD2C7151B03CA74008896F6 /* Build configuration list for PBXProject "Golf Shot Distance Tracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DD2C7111B03CA74008896F6;
+			productRefGroup = 3DD2C71B1B03CA74008896F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DD2C7191B03CA74008896F6 /* Golf Shot Distance Tracker */,
+				3DD2C72E1B03CA74008896F6 /* Golf Shot Distance TrackerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DD2C7181B03CA74008896F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D46124B1B215CC500F5AD4A /* Help.rtf in Resources */,
+				3DD2C7251B03CA74008896F6 /* Main.storyboard in Resources */,
+				3DD2C72A1B03CA74008896F6 /* LaunchScreen.xib in Resources */,
+				3D46124D1B2206C800F5AD4A /* WelcomeView.xib in Resources */,
+				3D4612451B213F7800F5AD4A /* About.txt in Resources */,
+				3DD2C7271B03CA74008896F6 /* Images.xcassets in Resources */,
+				3D4612491B214B5F00F5AD4A /* About.rtf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD2C72D1B03CA74008896F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DD2C7431B03CAE2008896F6 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework/strip-frameworks.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DD2C7161B03CA74008896F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4612431B1BCC8A00F5AD4A /* AddClubViewController.swift in Sources */,
+				3DD2C74D1B040424008896F6 /* TrackingViewController.swift in Sources */,
+				3DA344ED1B0CEA8900A2390A /* ClubDetailViewController.swift in Sources */,
+				3D03CAE01B12B85E0023FBEA /* SettingsViewController.swift in Sources */,
+				3DD2C7221B03CA74008896F6 /* ViewController.swift in Sources */,
+				3DD2C7491B03D5CB008896F6 /* Database.swift in Sources */,
+				3D03CAD01B0F89370023FBEA /* HistoryTableViewController.swift in Sources */,
+				3DA583D91B28CFCC00D6A415 /* HelpViewController.swift in Sources */,
+				3DD2C75F1B045B22008896F6 /* Statistics.swift in Sources */,
+				3DD2C7201B03CA74008896F6 /* AppDelegate.swift in Sources */,
+				3D03CAE21B1378D10023FBEA /* Extensions.swift in Sources */,
+				3D4612471B213FCD00F5AD4A /* AboutViewController.swift in Sources */,
+				3DD2C74F1B0427D3008896F6 /* RealShot.swift in Sources */,
+				3D46124F1B222F3000F5AD4A /* WelcomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DD2C72B1B03CA74008896F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DD2C7361B03CA74008896F6 /* Golf_Shot_Distance_TrackerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DD2C7311B03CA74008896F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DD2C7191B03CA74008896F6 /* Golf Shot Distance Tracker */;
+			targetProxy = 3DD2C7301B03CA74008896F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DD2C7231B03CA74008896F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DD2C7241B03CA74008896F6 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3DD2C7281B03CA74008896F6 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DD2C7291B03CA74008896F6 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DD2C7371B03CA74008896F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DD2C7381B03CA74008896F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DD2C73A1B03CA74008896F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RealmSwift.framework/Frameworks",
+				);
+				INFOPLIST_FILE = "Golf Shot Distance Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3DD2C73B1B03CA74008896F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/RealmSwift.framework/Frameworks",
+				);
+				INFOPLIST_FILE = "Golf Shot Distance Tracker/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3DD2C73D1B03CA74008896F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Golf Shot Distance TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Golf Shot Distance Tracker.app/Golf Shot Distance Tracker";
+			};
+			name = Debug;
+		};
+		3DD2C73E1B03CA74008896F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Golf Shot Distance TrackerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Golf Shot Distance Tracker.app/Golf Shot Distance Tracker";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DD2C7151B03CA74008896F6 /* Build configuration list for PBXProject "Golf Shot Distance Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD2C7371B03CA74008896F6 /* Debug */,
+				3DD2C7381B03CA74008896F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD2C7391B03CA74008896F6 /* Build configuration list for PBXNativeTarget "Golf Shot Distance Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD2C73A1B03CA74008896F6 /* Debug */,
+				3DD2C73B1B03CA74008896F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DD2C73C1B03CA74008896F6 /* Build configuration list for PBXNativeTarget "Golf Shot Distance TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DD2C73D1B03CA74008896F6 /* Debug */,
+				3DD2C73E1B03CA74008896F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DD2C7121B03CA74008896F6 /* Project object */;
+}
