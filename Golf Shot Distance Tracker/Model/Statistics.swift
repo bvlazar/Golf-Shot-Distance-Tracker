@@ -81,16 +81,33 @@ class Statistics {
             return 0
         }
         else {
+
             
             let sortedShots = club.distances.sorted("distance", ascending: true)
             
+            // if we need to get the median
+            if percentile == 0.5 {
+                
+                //if there is an even amount of terms
+                if (sortedShots.count % 2) == 0 {
+                    
+                    // get average of the two middle terms as median
+                    let index1 = sortedShots.count/2
+                    let index2 = index1+1
+                    
+                    let median = (sortedShots[index1].distance + sortedShots[index2].distance)/2
+                    return median
+                }
+            }
+            
+            // if its not a median or a median with odd terms, use formula (ceil(numberofshots*percentle)-1) to get proper index
             let index = Int(ceil(Double(sortedShots.count)*percentile))-1
-
+            
             return sortedShots[index].distance
+            
+
         }
         
         
     }
-    
-
 }
