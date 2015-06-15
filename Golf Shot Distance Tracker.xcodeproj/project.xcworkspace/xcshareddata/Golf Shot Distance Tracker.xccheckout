@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>90F1FB20-4990-486E-B4C3-ACDF8695EE93</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Golf Shot Distance Tracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>12474EA08E352383D6C068D6CECB30A89D2C2AFC</key>
+		<string>github.com:bvlazar/Golf-Distance-Tracker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Golf Shot Distance Tracker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>12474EA08E352383D6C068D6CECB30A89D2C2AFC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:bvlazar/Golf-Distance-Tracker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>12474EA08E352383D6C068D6CECB30A89D2C2AFC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>12474EA08E352383D6C068D6CECB30A89D2C2AFC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Golf%20Shot%20Distance%20Tracker</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -83,7 +83,8 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
+        locationManager.distanceFilter = 0.1
         locationManager.startUpdatingLocation()
         
         // make button rounded cuz it looks better

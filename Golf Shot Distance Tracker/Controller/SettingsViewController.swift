@@ -60,6 +60,10 @@ class SettingsViewController: UITableViewController {
             
             self.presentViewController(optionMenu, animated: true, completion: nil)
         }
+        
+        if indexPath.section == 1 {
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        }
     }
     
     // if the user changes the units in the segment control, change the units in NSUserdefualts
