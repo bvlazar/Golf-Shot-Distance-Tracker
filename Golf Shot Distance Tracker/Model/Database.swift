@@ -30,6 +30,8 @@ class Club: Object {
 
 }
 
+// used to reperesent all clubs in database. 
+// purpose is to keep the right order of clubs
 class Clubs: Object {
     let list = List<Club>()
 }
@@ -39,8 +41,12 @@ class Database {
     let realm = Realm()
     
     init() {
+        
+        // if there is no Clubs object
         if realm.objects(Clubs).count == 0 {
             
+            
+            // create the Clubs object to put clubs in
             let clubList = Clubs()
             
             realm.beginWrite()
@@ -103,6 +109,7 @@ class Database {
         
     }
     
+    // deletes given shot
     func deleteShot(id: Int) {
         
         let toDelete = realm.objects(Shot)[id]
@@ -113,6 +120,7 @@ class Database {
         
     }
     
+    // rearange the clubs given a specific club, start and end index
     func updateClubList(club: Club, startIndex: Int, endIndex: Int) {
         
         let clubs = realm.objects(Clubs).first!.list
@@ -136,6 +144,7 @@ class Database {
         
     }
     
+    // retrives all clubs but as a list object
     func retrieveClubsAsList() -> List<Club> {
         
         var allClubs = retrieveAllClubs()
@@ -150,15 +159,14 @@ class Database {
     }
     
 
-    
+    // retrieves all shots as a results object
     func retrieveAllShots() -> Results<Shot> {
         let allShots = realm.objects(Shot)
-        
-        
         return allShots
         
     }
     
+    // delets shots given a club name
     func deleteShots(name: String) {
         
         let shotsToDelete = realm.objects(Shot).filter("club.name='\(name)'")
@@ -170,6 +178,8 @@ class Database {
         
     }
     
+    
+    // deletes all shots in database, used for reset
     func deleteAllShots() {
         let allShots = retrieveAllShots()
         
@@ -177,6 +187,7 @@ class Database {
         realm.delete(allShots)
         realm.commitWrite()
     }
+    
     // returns club object from string
     func getClub(name: String) -> Club {
         let club = realm.objects(Club).filter("name = '\(name)'")
@@ -184,8 +195,6 @@ class Database {
         return club.first!
         
     }
-    
-
     
     // number of clubs in the database
     func clubCount() -> Int {
@@ -196,7 +205,6 @@ class Database {
     
     // checks to see if a club name is already in the database
     // please use before addClub()
-    
     func clubNameExists(name: String) -> Bool {
         let club = realm.objects(Club).filter("name = '\(name)'")
         

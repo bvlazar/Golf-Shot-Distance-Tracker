@@ -14,7 +14,7 @@ import CoreLocation
 // Finds the distance in YARDS and returns it
 
 class RealShot {
-    
+    // start and end locations of given tracked shot
     var startLocation: CLLocation?
     var endLocation: CLLocation?
     
