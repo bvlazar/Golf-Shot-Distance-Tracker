@@ -18,14 +18,16 @@
 		3D46124D1B2206C800F5AD4A /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D46124C1B2206C800F5AD4A /* WelcomeView.xib */; };
 		3DA344ED1B0CEA8900A2390A /* ClubDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA344EC1B0CEA8900A2390A /* ClubDetailViewController.swift */; };
 		3DA583D91B28CFCC00D6A415 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA583D81B28CFCC00D6A415 /* HelpViewController.swift */; };
+		3DD1DEB91B310AB1008FF418 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD1DEB71B310AB1008FF418 /* Realm.framework */; };
+		3DD1DEBA1B310AB1008FF418 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD1DEB71B310AB1008FF418 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3DD1DEBB1B310AB1008FF418 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD1DEB81B310AB1008FF418 /* RealmSwift.framework */; };
+		3DD1DEBC1B310AB1008FF418 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD1DEB81B310AB1008FF418 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DD2C7201B03CA74008896F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C71F1B03CA74008896F6 /* AppDelegate.swift */; };
 		3DD2C7221B03CA74008896F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C7211B03CA74008896F6 /* ViewController.swift */; };
 		3DD2C7251B03CA74008896F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DD2C7231B03CA74008896F6 /* Main.storyboard */; };
 		3DD2C7271B03CA74008896F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DD2C7261B03CA74008896F6 /* Images.xcassets */; };
 		3DD2C72A1B03CA74008896F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD2C7281B03CA74008896F6 /* LaunchScreen.xib */; };
 		3DD2C7361B03CA74008896F6 /* Golf_Shot_Distance_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C7351B03CA74008896F6 /* Golf_Shot_Distance_TrackerTests.swift */; };
-		3DD2C7401B03CABE008896F6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD2C73F1B03CABE008896F6 /* RealmSwift.framework */; };
-		3DD2C7411B03CABE008896F6 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD2C73F1B03CABE008896F6 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DD2C7491B03D5CB008896F6 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C7481B03D5CB008896F6 /* Database.swift */; };
 		3DD2C74D1B040424008896F6 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C74C1B040424008896F6 /* TrackingViewController.swift */; };
 		3DD2C74F1B0427D3008896F6 /* RealShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD2C74E1B0427D3008896F6 /* RealShot.swift */; };
@@ -49,7 +51,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3DD2C7411B03CABE008896F6 /* RealmSwift.framework in Embed Frameworks */,
+				3DD1DEBC1B310AB1008FF418 /* RealmSwift.framework in Embed Frameworks */,
+				3DD1DEBA1B310AB1008FF418 /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +71,8 @@
 		3D46124C1B2206C800F5AD4A /* WelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
 		3DA344EC1B0CEA8900A2390A /* ClubDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClubDetailViewController.swift; sourceTree = "<group>"; };
 		3DA583D81B28CFCC00D6A415 /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpViewController.swift; path = ../View/HelpViewController.swift; sourceTree = "<group>"; };
+		3DD1DEB71B310AB1008FF418 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		3DD1DEB81B310AB1008FF418 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		3DD2C71A1B03CA74008896F6 /* Golf Shot Distance Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golf Shot Distance Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD2C71E1B03CA74008896F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD2C71F1B03CA74008896F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +83,6 @@
 		3DD2C72F1B03CA74008896F6 /* Golf Shot Distance TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Golf Shot Distance TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DD2C7341B03CA74008896F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DD2C7351B03CA74008896F6 /* Golf_Shot_Distance_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Golf_Shot_Distance_TrackerTests.swift; sourceTree = "<group>"; };
-		3DD2C73F1B03CABE008896F6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		3DD2C7481B03D5CB008896F6 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		3DD2C74C1B040424008896F6 /* TrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		3DD2C74E1B0427D3008896F6 /* RealShot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealShot.swift; sourceTree = "<group>"; };
@@ -90,7 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DD2C7401B03CABE008896F6 /* RealmSwift.framework in Frameworks */,
+				3DD1DEBB1B310AB1008FF418 /* RealmSwift.framework in Frameworks */,
+				3DD1DEB91B310AB1008FF418 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +147,8 @@
 		3DD2C7111B03CA74008896F6 = {
 			isa = PBXGroup;
 			children = (
-				3DD2C73F1B03CABE008896F6 /* RealmSwift.framework */,
+				3DD1DEB71B310AB1008FF418 /* Realm.framework */,
+				3DD1DEB81B310AB1008FF418 /* RealmSwift.framework */,
 				3DD2C71C1B03CA74008896F6 /* Golf Shot Distance Tracker */,
 				3DD2C7321B03CA74008896F6 /* Golf Shot Distance TrackerTests */,
 				3DD2C71B1B03CA74008896F6 /* Products */,
@@ -211,7 +217,7 @@
 				3DD2C7171B03CA74008896F6 /* Frameworks */,
 				3DD2C7181B03CA74008896F6 /* Resources */,
 				3DD2C7421B03CABE008896F6 /* Embed Frameworks */,
-				3DD2C7431B03CAE2008896F6 /* Run Script */,
+				3DD1DEBD1B310C9B008FF418 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -303,19 +309,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3DD2C7431B03CAE2008896F6 /* Run Script */ = {
+		3DD1DEBD1B310C9B008FF418 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Run Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework/strip-frameworks.sh\"";
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -465,8 +470,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Benjamin Lazar (328E3ZZXN3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Benjamin Lazar (328E3ZZXN3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -488,8 +493,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Benjamin Lazar (328E3ZZXN3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Benjamin Lazar (328E3ZZXN3)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

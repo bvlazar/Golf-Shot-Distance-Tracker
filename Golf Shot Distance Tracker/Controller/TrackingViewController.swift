@@ -49,6 +49,8 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
     //keeps track if the view is actily tracking a shot
     var isTracking = false
     
+    // the user gives special perission to start tracking even though location is inacurate
+    var trackingPermission = false
     
     
     
@@ -166,7 +168,7 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
         
 
         // if we are in the middle of tracking, we need to update distance label
-        if isTracking {
+        if isTracking || trackingPermission {
             // only update display if the accurcay is good
             if currentLocation.horizontalAccuracy <= 11 {
                 
@@ -222,6 +224,8 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
                     var notAccurateAlert = UIAlertController(title: "Location is Not Accurate", message: "The current determined location is not accurate, do you still want to start tracking or wait for better accuracy.", preferredStyle: UIAlertControllerStyle.Alert)
                     
                     notAccurateAlert.addAction(UIAlertAction(title: "Start", style: .Default, handler: { (action: UIAlertAction!) in
+                        // the user is giving permisoon to continue
+                        self.trackingPermission = true
                         self.startTracking()
                         
                     }))
@@ -274,7 +278,6 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
     func startTracking() {
         
         
-        
         textField.enabled = false
         
         // make the button change to say stop tracking and change the background color
@@ -302,6 +305,7 @@ class TrackingViewController: UIViewController, UIPickerViewDelegate, CLLocation
         
        
         isTracking = false
+        trackingPermission = false
         
         // add shot to database
         database.addShot(picker.selectedRowInComponent(0), distance: currentShot.getDistance())
